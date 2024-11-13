@@ -5,74 +5,86 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <style>   
+        body {
+            color: hotpink;
+            background-color: black;
+            text-align: center;
+        }
 
-    <style>
+        h1 {
+            font-size: 40px;
+        }
 
-body {
-    font-family:Arial, Helvetica, sans-serif ;
-    color:hotpink;
-    background-color:black;
-    text-align:center;
-    }
+        h3 {
+            font-size: 25px;
+        }
 
-h1{font-size: 80 vw;}
-p{font-size: 50 vw;}
+        p {
+            font-size: 15px;
+        }
 
-/* unvisited link */
-a:link {
-  color: red;
-}
+        /* Center the lists and remove default margin */
+        ul {
+            list-style-position: inside;
+            padding-left: 0;
+            display: inline-block;
+            text-align: left; /* This makes sure the list items align left, keeping the dots aligned */
+        }
 
-/* visited link */
-a:visited {
-  color: blueviolet;
-}
+        li {
+            font-size: 20px;
+            margin: 10px 0; /* Add some spacing between list items */
+        }
 
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
+        /* Style for images to make sure they do not overlap */
+        img {
+            max-width: 100%;
+        }
 
-/* selected link */
-a:active {
-  color: blue;
-}
+        .left-img {
+            float: left;
+            width: 35%;
+            margin-right: 20px; /* Ensure space between images and text */
+        }
 
+        .right-img {
+            float: right;
+            width: 35%;
+            margin-left: 20px; /* Ensure space between images and text */
+        }
     </style>
 </head>
 <body>
-<a href="https://youtu.be/dQw4w9WgXcQ?si=FtR7YLBb7rCyFScA">???</a>
+    <a href="https://youtu.be/dQw4w9WgXcQ?si=FtR7YLBb7rCyFScA">???</a>
     <img src="welcome.gif" alt="Computer man" style="height: 300px; width: 100%">
 
-<h1>ALISES PORTFOLIO</h1>
+    <h1>ALISES PORTFOLIO</h1>
+<p>Mani sauc Kate Alise Strazdiņa.</p>
+<p>Es mācos VTDT, esmu nostrādājusi hesburgerī 1 mēnesi, tad pametu darbu.</p>
+<p>Esmu mainijusi skolas 8 reizes, jo bieži mainīju dzīvesvietu.</p>
+<p>Man patīk zīmēt, rakstīt, klausīties mūziku un spēlēt video spēles</p>
+    <div> 
+        <h3>Kādas programmēšanas valodas es māku</h3>
+        <ul>
+            <p>Mazliet no:</p>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>PHP</li>
+            <li>C++</li>
+        </ul> 
 
-  
-
-
-
-<div><img src="unnamed.gif" alt="Computer man" style="float: right; width: 35%;"></div>
-<img src="waaha.gif" alt="Computer man" style="float:left;  width: 35%;">
-
-<div>
-    <p>Kādas programmēšanas valodas es māku</p>
-    <ul>
-        <p>Mazliet no:</p>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
-        <li>PHP</li>
-        <li>C++</li>
-    </ul> 
- </div>
- <p>Kādas valodas es māku</p>
- <ul>
-     <li>Angļu valodu</li>
-     <li>Latviešu valodu</li>
-     <li>Krievu</li>
-     <li>Vācu</li>
-     <li>Mazliet norvēģu</li>
- </ul> 
+        <h3>Kādas valodas es māku</h3>
+        <ul>
+            <li>Angļu valodu</li>
+            <li>Latviešu valodu</li>
+            <li>Krievu</li>
+            <li>Vācu</li>
+        </ul>
+    </div>
+     
+    <img src="unnamed.gif" alt="Computer man" class="right-img">
+    <img src="waaha.gif" alt="Computer man" class="left-img">
 </body>
 </html>
