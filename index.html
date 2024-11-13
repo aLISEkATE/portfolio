@@ -1,15 +1,44 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html lang="lv">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alises Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>   
         body {
-            color: hotpink;
+            color: whitesmoke;
             background-color: black;
             text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container to hold the images and text */
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Left and right image styles */
+        .left-img, .right-img {
+            width: 35%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Centered text container */
+        .text-container {
+            width: 30%;
+            text-align: left;
+            background-color: #311122;
+            border: 2px solid hotpink;
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
         }
 
         h1 {
@@ -24,67 +53,67 @@
             font-size: 15px;
         }
 
-        /* Center the lists and remove default margin */
         ul {
             list-style-position: inside;
             padding-left: 0;
-            display: inline-block;
-            text-align: left; /* This makes sure the list items align left, keeping the dots aligned */
+            text-align: left;
         }
 
         li {
             font-size: 20px;
-            margin: 10px 0; /* Add some spacing between list items */
+            margin: 10px 0;
         }
 
-        /* Style for images to make sure they do not overlap */
-        img {
+        /* Ensure the main image on top is responsive */
+        .main-img {
             max-width: 100%;
+            height: auto;
         }
 
-        .left-img {
-            float: left;
-            width: 35%;
-            margin-right: 20px; /* Ensure space between images and text */
-        }
-
-        .right-img {
-            float: right;
-            width: 35%;
-            margin-left: 20px; /* Ensure space between images and text */
-        }
     </style>
 </head>
 <body>
-    <a href="https://youtu.be/dQw4w9WgXcQ?si=FtR7YLBb7rCyFScA">???</a>
-    <img src="welcome.gif" alt="Computer man" style="height: 300px; width: 100%">
+    <a href="https://youtu.be/dQw4w9WgXcQ?si=FtR7YLBb7rCyFScA" style="display:block; color: hotpink; margin: 20px 0;">???</a>
+    
+    <!-- Main Image at the top -->
+    <img src="welcome.gif" alt="Computer man" class="main-img">
 
     <h1>ALISES PORTFOLIO</h1>
-<p>Mani sauc Kate Alise Strazdiņa.</p>
-<p>Es mācos VTDT, esmu nostrādājusi hesburgerī 1 mēnesi, tad pametu darbu.</p>
-<p>Esmu mainijusi skolas 8 reizes, jo bieži mainīju dzīvesvietu.</p>
-<p>Man patīk zīmēt, rakstīt, klausīties mūziku un spēlēt video spēles</p>
-    <div> 
-        <h3>Kādas programmēšanas valodas es māku</h3>
-        <ul>
-            <p>Mazliet no:</p>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-            <li>PHP</li>
-            <li>C++</li>
-        </ul> 
 
-        <h3>Kādas valodas es māku</h3>
-        <ul>
-            <li>Angļu valodu</li>
-            <li>Latviešu valodu</li>
-            <li>Krievu</li>
-            <li>Vācu</li>
-        </ul>
+    <!-- Content container with images on the sides and text in the middle -->
+    <div class="content-container">
+        <!-- Left image -->
+        <img src="waaha.gif" alt="Waaha gif" class="left-img">
+
+        <!-- Center text container -->
+        <div class="text-container">
+            <p>Mani sauc Kate Alise Strazdiņa.</p>
+            <p>Es mācos VTDT, esmu nostrādājusi hesburgerī 1 mēnesi, tad pametu darbu.</p>
+            <p>Esmu mainijusi skolas 8 reizes, jo bieži mainīju dzīvesvietu.</p>
+            <p>Man patīk zīmēt, rakstīt, klausīties mūziku un spēlēt video spēles.</p>
+
+            <h3>Kādas programmēšanas valodas es māku</h3>
+            <ul>
+                <p>Mazliet no:</p>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>PHP</li>
+                <li>C++</li>
+            </ul>
+
+            <h3>Kādas valodas es māku</h3>
+            <ul>
+                <li>Angļu valodu</li>
+                <li>Latviešu valodu</li>
+                <li>Krievu</li>
+                <li>Vācu</li>
+            </ul>
+        </div>
+
+        <!-- Right image -->
+        <img src="unnamed.gif" alt="Unnamed gif" class="right-img">
     </div>
-     
-    <img src="unnamed.gif" alt="Computer man" class="right-img">
-    <img src="waaha.gif" alt="Computer man" class="left-img">
+
 </body>
 </html>
